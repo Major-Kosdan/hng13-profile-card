@@ -13,8 +13,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 /* Profile Card Container */
@@ -23,12 +24,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   border-radius: 16px;
-  max-width: 800px;
+  max-width: 850px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -41,6 +44,9 @@ body {
 /* Avatar section */
 .avatar-section {
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar {
@@ -78,10 +84,12 @@ header h2 {
 /* Social Links */
 .social-links {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
   list-style: none;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  padding: 0;
 }
 
 .social-links a {
@@ -91,6 +99,7 @@ header h2 {
   padding: 0.4rem 0.9rem;
   border-radius: 25px;
   transition: all 0.3s ease;
+  font-size: 0.9rem;
 }
 
 .social-links a:hover,
@@ -109,6 +118,7 @@ section h3 {
   color: #00ffff;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 section ul {
@@ -116,13 +126,19 @@ section ul {
   padding-left: 1.5rem;
   color: #ccc;
   font-size: 0.95rem;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-/* Responsiveness */
+/* ✅ Responsiveness Fixes */
 @media (max-width: 768px) {
   .profile-card {
     flex-direction: column;
+    gap: 1.5rem;
     text-align: center;
+    padding: 1.5rem;
+    max-width: 95%;
   }
 
   .avatar {
@@ -131,6 +147,54 @@ section ul {
   }
 
   header h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  section ul {
+    padding-left: 1rem;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .profile-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .social-links a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  section h3 {
+    font-size: 1rem;
+  }
+
+  section ul {
+    font-size: 0.9rem;
   }
 }
