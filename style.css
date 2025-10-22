@@ -172,6 +172,11 @@ main section p {
   font-size: 0.95rem;
 }
 
+@media (max-width: 600px) {
+  .container[data-testid="test-about-page"] {
+    margin: auto;   
+  }
+}
 
 /* Page title */
 header h1 {
