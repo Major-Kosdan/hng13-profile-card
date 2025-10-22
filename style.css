@@ -1,11 +1,10 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: 'Poppins', sans-serif;
   background: radial-gradient(circle at top left, #0d0d0d, #111, #000);
@@ -17,7 +16,7 @@ body {
   padding: 1rem;
 }
 
-/* Profile Card Container */
+
 .profile-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -38,7 +37,7 @@ body {
   box-shadow: 0 0 40px rgba(0, 255, 255, 0.4);
 }
 
-/* Avatar section */
+
 .avatar-section {
   flex-shrink: 0;
 }
@@ -51,7 +50,7 @@ body {
   object-fit: cover;
 }
 
-/* Details Section */
+
 .profile-details {
   flex: 1;
 }
@@ -75,7 +74,7 @@ header h2 {
   margin-bottom: 1.5rem;
 }
 
-/* Social Links */
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -100,7 +99,7 @@ header h2 {
   outline: none;
 }
 
-/* Lists */
+
 section {
   margin-bottom: 1rem;
 }
@@ -194,7 +193,6 @@ header h1 {
  
 }
 
-/* Contact page container only */
 body:has(#contact-form) .container {
   height: auto;
   margin-bottom: 50px;
@@ -203,7 +201,6 @@ body:has(#contact-form) .container {
   max-width: 800px;
 }
 
-/* Fieldset & Legend */
 fieldset {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 10px;
@@ -217,7 +214,6 @@ legend {
   font-size: 1.1rem;
 }
 
-/* Input sections */
 section {
   display: flex;
   flex-direction: column;
@@ -230,7 +226,7 @@ label {
   margin-bottom: 0.4rem;
 }
 
-/* Inputs and textarea */
+
 input,
 textarea {
   background: rgba(255, 255, 255, 0.07);
@@ -250,7 +246,6 @@ textarea:focus {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
-/* Footer & button */
 footer {
   text-align: center;
   margin-top: 1rem;
@@ -272,7 +267,7 @@ button[type="submit"]:hover {
   transform: translateY(-2px);
 }
 
-/* Messages */
+
 .error {
   color: #ff4d4d;
   font-size: 0.85rem;
@@ -287,7 +282,7 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .container {
     padding: 1.5rem;
@@ -309,7 +304,6 @@ button[type="submit"]:hover {
 }
 
 
-/* Error + success message styles */
 .error {
   color: #ff4b4b;
   font-size: 0.9rem;
@@ -325,7 +319,7 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-/* Invalid field glow */
+
 input:invalid,
 textarea:invalid {
   border: 1px solid #ff4b4b;

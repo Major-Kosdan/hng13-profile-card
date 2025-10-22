@@ -1,4 +1,4 @@
-// Function to display current time in milliseconds
+
 function updateTime() {
   const timeElement = document.getElementById('current-time');
   if (timeElement) {
@@ -6,10 +6,8 @@ function updateTime() {
   }
 }
 
-// Update once at load
 updateTime();
 
-// Optional: update every second for live ticking (not required, but nice)
 setInterval(updateTime, 1000);
 
 
@@ -65,14 +63,11 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// Helper to show inline errors
 function showError(fieldId, message) {
   const errorField = document.getElementById(`error-${fieldId}`);
   errorField.textContent = message;
 }
 
-
-/// Select toggle button and nav links container
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -84,7 +79,6 @@ if (navToggle && navLinks) {
   console.warn('Navbar toggle or nav links not found!');
 }
 
-// Optional: Highlight active link
 const currentPage = window.location.pathname.split('/').pop();
 document.querySelectorAll('.nav-links a').forEach(link => {
   if (link.getAttribute('href') === currentPage) {
