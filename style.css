@@ -123,6 +123,7 @@ section ul {
   .profile-card {
     flex-direction: column;
     text-align: center;
+    margin-top: auto;
   }
 
   .avatar {
@@ -170,6 +171,7 @@ main section p {
   color: #ccc;
   font-size: 0.95rem;
 }
+
 
 /* Page title */
 header h1 {
@@ -327,82 +329,4 @@ textarea:invalid {
 input:valid,
 textarea:valid {
   border: 1px solid #4bffa5;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #121212;
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  border-bottom: 1px solid #333;
-}
-
-.logo {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: #ccc;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #00adb5;
-}
-
-/* Mobile toggle button */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-  z-index: 1100;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* directly below navbar */
-    right: 1rem;
-    background-color: #1e1e1e;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    z-index: 2000;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin-bottom: 0.8rem;
-  }
-
-  .nav-links li:last-child {
-    margin-bottom: 0;
-  }
 }
